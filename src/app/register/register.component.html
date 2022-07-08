@@ -1,0 +1,54 @@
+<mat-card class="ex-card" layout-align="center center">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Register Here</mat-card-title>
+    </mat-card-header>
+<form [formGroup]="registeruser">
+
+  <!-- Email input -->
+
+  <div class="form-outline mb-2">
+    <input type="text" id="form2Example1"  formControlName="id" class="form-control" >
+    <!-- [(ngModel)]="user.F_name"/> -->
+    <label class="form-label" for="form2Example1"  >National Id Card</label>
+  </div>
+
+<div class="form-outline mb-2">
+    <input type="text" id="form2Example2" formControlName="fname" class="form-control" />
+    <label class="form-label" for="form2Example2" >First Name</label>
+  </div>
+
+  <div class="form-outline mb-2">
+    <input type="text" id="form2Example3" formControlName="sname" class="form-control" />
+    <label class="form-label" for="form2Example3" >Second Name</label>
+  </div>
+
+  <div class="form-outline mb-2">
+    <input type="text" id="form2Example4" formControlName="lname" class="form-control" />
+    <label class="form-label" for="form2Example4" >Last Name</label>
+  </div>
+
+  <div class="form-outline mb-2">
+    <input type="text" id="form2Example5" formControlName="role" class="form-control" />
+    <label class="form-label" for="form2Example5" >Role</label>
+  </div>
+
+  <div class="form-outline mb-2">
+    <input type="text" id="form2Example6" formControlName="status" class="form-control" />
+    <label class="form-label" for="form2Example6" >Status</label>
+  </div>
+
+  <div class="form-outline mb-2">
+    <input type="email" id="form2Example7" formControlName="email" class="form-control" />
+    <label class="form-label" for="form2Example7" >Email address</label>
+  </div>
+
+  <!-- Password input -->
+  <div class="form-outline mb-4">
+    <input type="password" id="form2Example8" formControlName="password" class="form-control" />
+    <label class="form-label" for="form2Example8">Password</label>
+  </div>
+  <button type="button" class="btn btn-primary btn-block mb-4">Register</button>
+
+</form>
+</mat-card>
